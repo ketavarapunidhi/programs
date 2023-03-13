@@ -1,0 +1,10 @@
+# cook your dish here
+import math
+t = int(input())
+for i in range(t):
+    a,b,c=map(int,input().split())
+    if b>c :
+        print(math.ceil(a/b))
+    else:
+        a=a-c
+        print(math.ceil(a/(b)+1))

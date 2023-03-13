@@ -1,0 +1,12 @@
+# cook your dish here
+t=int(input())
+for i in range(t):
+    X,Y,Z=map(int,input().split())
+    c=0
+    while(Z<Y):
+        c=c+1
+        Y=Y-Z
+    if(Z>=Y):
+        c=c+1
+    print(c*X)
+    

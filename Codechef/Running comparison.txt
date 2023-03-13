@@ -1,0 +1,17 @@
+# cook your dish here
+# cook your dish here
+for i in range(int(input())):
+    n=int(input())
+    l1=[int(x) for x in input().split()]
+    l2=[int(x) for x in input().split()]
+    c=0
+    for i in range(n):
+        if(l1[i]>l2[i]):
+            if(l1[i]<=2*l2[i]):
+                c+=1
+        elif(l1[i]<l2[i]):
+            if(2*l1[i]>=l2[i]):
+                c+=1
+        else:
+            c=c+1 
+    print(c)
